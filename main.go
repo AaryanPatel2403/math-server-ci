@@ -8,7 +8,6 @@ import (
 
 func addHandler(w http.ResponseWriter, r *http.Request) {
     aStr := r.URL.Query().Get("a")
-	cStr := r.URL.Query().Get("c")
     bStr := r.URL.Query().Get("b")
     a, err := strconv.Atoi(aStr)
     if err != nil {
